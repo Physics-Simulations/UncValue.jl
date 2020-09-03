@@ -1,3 +1,5 @@
+![julia](https://github.com/Physics-Simulations/UncValue.jl/workflows/julia/badge.svg)
+
 # Uncertainty-Value
 Simple class to evaluate the uncertainty for complex or very long calculations given the initial values together with its uncertainty.
 
