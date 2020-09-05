@@ -13,7 +13,7 @@ using UncValue
 then initialise your `Value` variables (numbers, lists, matrices...) as
 ```python
 pi = Value(3.14159, 0.00011) # number variable 3.14159 +/- 0.00011
-A = [pi; Value(2.718, 0.036); Value(1.61803398875, 29e-11)] # numpy array with 3 elements
+A = [pi; Value(2.718, 0.036); Value(1.61803398875, 29e-11)] # array with 3 elements
 M = Value(rand(3,5), rand(3,5)*0.056) # 3x5 matrix
 ```
 
