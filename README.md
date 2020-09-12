@@ -6,12 +6,24 @@
 Simple class to evaluate the uncertainty for complex or very long calculations given the initial values together with its uncertainty.
 
 # How-To
+
+## Installation
+The recommended way to install UncValue in your computer is via `Pkg` by writting
+```julia
+using Pkg
+Pkg.add("UncValue")
+```
+
+Alternatively, you can download the (release files)[https://github.com/Physics-Simulations/UncValue.jl/releases] and install it manually.
+
+
+## Usage
 The way it works is simple, first import the script as
 ```julia
 using UncValue
 ```
 then initialise your `Value` variables (numbers, lists, matrices...) as
-```python
+```julia
 pi = Value(3.14159, 0.00011) # number variable 3.14159 +/- 0.00011
 A = [pi; Value(2.718, 0.036); Value(1.61803398875, 29e-11)] # array with 3 elements
 M = Value(rand(3,5), rand(3,5)*0.056) # 3x5 matrix
