@@ -1,4 +1,4 @@
-![tests](https://github.com/Physics-Simulations/UncValue.jl/workflows/tests/badge.svg) [![codecov](https://codecov.io/gh/Physics-Simulations/UncValue.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/Physics-Simulations/UncValue.jl)
+![tests](https://github.com/Physics-Simulations/UncValue.jl/workflows/tests/badge.svg) [![codecov](https://codecov.io/gh/Physics-Simulations/UncValue.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/Physics-Simulations/UncValue.jl) [![version](https://juliahub.com/docs/UncValue/version.svg)](https://juliahub.com/ui/Packages/UncValue/2sLzV)
 
 
 
