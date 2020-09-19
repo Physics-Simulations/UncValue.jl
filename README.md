@@ -12,7 +12,7 @@ using Pkg
 Pkg.add("UncValue")
 ```
 
-Alternatively, you can download the (release files)[https://github.com/Physics-Simulations/UncValue.jl/releases] and install it manually.
+Alternatively, you can download the [release files](https://github.com/Physics-Simulations/UncValue.jl/releases) and install it manually.
 
 
 ## Usage
