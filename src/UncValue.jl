@@ -9,13 +9,15 @@ struct Value{T <: Real}
 
     Value{T}(x, σ) where {T <: Real} = σ < 0 ? error("Negative uncertainty has no meaning.") : new{T}(x, σ)
 end
+function Value(x::T, σ::U) where {T <: Real, U <: Real}
+    xT, σT = promote(x, σ)
+    @warn "Value was initialize with different types, promoting $(typeof(x)) & $(typeof(σ)) to $(typeof(xT))."
+    Value{typeof(xT)}(xT, σT)
+end
 Value(x::T, σ::T) where {T <: Real} = Value{T}(x, σ)
 Value(x::T) where {T <: Real} = Value{T}(x, zero(x))
 
 export Value, val, unc, set_unc
-
-# https://docs.julialang.org/en/v1/base/math/
-# https://en.wikibooks.org/wiki/Introducing_Julia/Modules_and_packages#Structure_of_a_package
 
 ## MATHEMATICAL OPERATORS
 

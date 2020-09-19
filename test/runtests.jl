@@ -1,7 +1,8 @@
 using Test
 using Statistics
 
-using UncValue
+include("../src/UncValue.jl")
+using ..UncValue
 
 a = Value(3.1415, 0.0012)
 b = Value(2.7182818, 3.4e-6)
@@ -16,6 +17,12 @@ c = Value(36458.246, 25.64)
     d = Value(5.248)
     @test d.x == 5.248
     @test d.σ == 0
+
+    d = Value(8.0, 1)
+    @test typeof(d.x) == typeof(d.σ)
+
+    d = Value(8, 0.2)
+    @test typeof(d.x) == typeof(d.σ)
 end
 
 @testset "precision" begin

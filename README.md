@@ -1,7 +1,5 @@
 ![tests](https://github.com/Physics-Simulations/UncValue.jl/workflows/tests/badge.svg) [![codecov](https://codecov.io/gh/Physics-Simulations/UncValue.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/Physics-Simulations/UncValue.jl)
 
-
-
 # Uncertainty-Value
 Simple class to evaluate the uncertainty for complex or very long calculations given the initial values together with its uncertainty.
 
@@ -11,7 +9,7 @@ The way it works is simple, first import the script as
 using UncValue
 ```
 then initialise your `Value` variables (numbers, lists, matrices...) as
-```python
+```julia
 pi = Value(3.14159, 0.00011) # number variable 3.14159 +/- 0.00011
 A = [pi; Value(2.718, 0.036); Value(1.61803398875, 29e-11)] # array with 3 elements
 M = Value(rand(3,5), rand(3,5)*0.056) # 3x5 matrix
