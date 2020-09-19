@@ -1,9 +1,21 @@
-![tests](https://github.com/Physics-Simulations/UncValue.jl/workflows/tests/badge.svg) [![codecov](https://codecov.io/gh/Physics-Simulations/UncValue.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/Physics-Simulations/UncValue.jl)
+![tests](https://github.com/Physics-Simulations/UncValue.jl/workflows/tests/badge.svg) [![codecov](https://codecov.io/gh/Physics-Simulations/UncValue.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/Physics-Simulations/UncValue.jl) [![version](https://juliahub.com/docs/UncValue/version.svg)](https://juliahub.com/ui/Packages/UncValue/2sLzV)
 
 # Uncertainty-Value
 Simple class to evaluate the uncertainty for complex or very long calculations given the initial values together with its uncertainty.
 
 # How-To
+
+## Installation
+The recommended way to install UncValue in your computer is via `Pkg` by writting
+```julia
+using Pkg
+Pkg.add("UncValue")
+```
+
+Alternatively, you can download the (release files)[https://github.com/Physics-Simulations/UncValue.jl/releases] and install it manually.
+
+
+## Usage
 The way it works is simple, first import the script as
 ```julia
 using UncValue
